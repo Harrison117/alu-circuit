@@ -1,0 +1,10 @@
+v 3
+file . "parallel_adder_tb.vhd" "20190212164514.000" "20190213004517.885":
+  entity parallel_adder_tb at 1( 0) + 0 on 183;
+  architecture test of parallel_adder_tb at 9( 120) + 0 on 184;
+file . "parallel_adder_2_2.vhd" "20190212164458.000" "20190213004517.882":
+  entity parallel_adder_2_2 at 1( 0) + 0 on 181;
+  architecture struct of parallel_adder_2_2 at 15( 332) + 0 on 182;
+file . "full_adder.vhd" "20190212164332.000" "20190213004517.881":
+  entity full_adder at 1( 0) + 0 on 179;
+  architecture behav of full_adder at 12( 177) + 0 on 180;
