@@ -4,8 +4,8 @@ use ieee.std_logic_1164.all;
 
 entity twos_c_2 is
 	port(
-		a: in std_logic_vector;
-		o: out std_logic_vector
+		a: in std_logic_vector(0 to 1);
+		o: out std_logic_vector(0 to 1)
 		);
 end twos_c_2;
 
