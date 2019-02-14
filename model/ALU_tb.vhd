@@ -31,23 +31,11 @@ architecture test of ALU_tb is
 			-- for loop construct
 			for count in 0 to 15 loop
             inputs <= test_input;
-          -- a_in(1) <= test_input(3);
-          -- a_in(0) <= test_input(2);
-          -- b_in(1) <= test_input(1);
-          -- b_in(0) <= test_input(0);
-          -- report std_logic'image(a_in(0)) &
-          -- std_logic'image(a_in(1)) & " + " &
-          -- std_logic'image(b_in(0)) &
-          -- std_logic'image(b_in(1)) ;
-			  --give process some time
 			  wait for 10 ns;
+        assert to_integer(unsigned(outputs))=(to_integer(unsigned(inputs(3 to 4)))+to_integer(unsigned(inputs(5 to 6)))) mod 4 
         report  integer'image(to_integer(unsigned(inputs(3 to 4)))) &" + "
-                & integer'image(to_integer(unsigned(inputs(5 to 6)))) & " = "
+                & integer'image(to_integer(unsigned(inputs(5 to 6)))) & " != "
                 & integer'image(to_integer(unsigned(outputs)));
-
-          -- report  "=" & std_logic'image(c_out1) & " + " &
-          -- std_logic'image(o1(0)) & std_logic'image(o1(1));
-			  -- test_input := std_logic_vector(unsigned(test_input) + 1);
         test_input := std_logic_vector(unsigned(test_input)  +1);
 			end loop;
 			wait;
