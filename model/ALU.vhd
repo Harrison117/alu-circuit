@@ -106,6 +106,27 @@ architecture struct of ALU is
       o: out std_logic_vector(0 to 1)
       );
 
+=======
+  component increment is
+  	port(
+  		a,b: in std_logic_vector(0 to 1);
+  		o: out std_logic_vector(0 to 1);
+  		c_out: out std_logic
+  		);
+  end component;
+  component subtract_2_2_1c is
+  	port(
+  		a,b: in std_logic_vector(0 to 1);
+  		o: out std_logic_vector(0 to 1);
+  		c_out_2: out std_logic
+  		);
+  end component;
+  component subtract_2_2_2c is
+  	port(
+  		a,b: in std_logic_vector(0 to 1);
+  		o: out std_logic_vector(0 to 1);
+  		c_out_2: out std_logic
+  		);
   end component;
 
   begin
@@ -136,8 +157,11 @@ architecture struct of ALU is
     -- 4: add
     add: parallel_adder_2_2 port map(demux_to_op_4(0 to 1),demux_to_op_4(2 to 3) , op4_out, op4_c_out);
     -- 5: sub1
+    sub_1c: subtract_2_2_1c port map(demux_to_op_5(0 to 1),demux_to_op_5(2 to 3) , op5_out, op5_c_out);
     -- 6: sub2
+    sub_2c: subtract_2_2_2c port map(demux_to_op_6(0 to 1),demux_to_op_6(2 to 3) , op6_out, op6_c_out);
     -- 7: increment
+    inc: increment port map(demux_to_op_7(0 to 1),demux_to_op_7(2 to 3) , op7_out, op7_c_out);
 
     -- multiplexer connectors
     op_to_mux0: op_to_mux port map(op0_out(0), op1_out(0), op2_out(0), op3_out(0), op4_out(0), op5_out(0), op6_out(0), op7_out(0),op_to_mux_0 );
