@@ -95,6 +95,48 @@ architecture test of ALU_tb is
                 & integer'image(to_integer(unsigned(outputs)));
         test_input := std_logic_vector(unsigned(test_input)  +1);
 			end loop;
+
+      report "testing subtraction 1's complement";
+      test_input := "1010000"; -- binary number 0 (2 bits)
+      inputs <= test_input;
+      -- for loop construct
+      for count in 0 to 15 loop
+            inputs <= test_input;
+        wait for 10 ns;
+        assert to_integer(unsigned(outputs))=(to_integer(unsigned(inputs(3 to 4)))+to_integer(unsigned(not inputs(5 to 6)))) mod 4
+        report  integer'image(to_integer(unsigned(inputs(3 to 4)))) &" - "
+          & integer'image(to_integer(unsigned(inputs(5 to 6)))) & " != "
+          & integer'image(to_integer(unsigned(outputs)));
+        test_input := std_logic_vector(unsigned(test_input)  +1);
+      end loop;
+
+      report "testing subtraction 2's complement";
+      test_input := "1100000"; -- binary number 0 (2 bits)
+      inputs <= test_input;
+      -- for loop construct
+      for count in 0 to 15 loop
+            inputs <= test_input;
+        wait for 10 ns;
+        assert to_integer(unsigned(outputs))=(to_integer(unsigned(inputs(3 to 4)))-to_integer(unsigned(inputs(5 to 6)))) mod 4
+        report  integer'image(to_integer(unsigned(inputs(3 to 4)))) &" - "
+                & integer'image(to_integer(unsigned(inputs(5 to 6)))) & " != "
+                & integer'image(to_integer(unsigned(outputs)));
+        test_input := std_logic_vector(unsigned(test_input)  +1);
+      end loop;
+
+      report "testing increment";
+      test_input := "1110000"; -- binary number 0 (2 bits)
+      inputs <= test_input;
+      -- for loop construct
+      for count in 0 to 15 loop
+            inputs <= test_input;
+        wait for 10 ns;
+        assert to_integer(unsigned(outputs))=(to_integer(unsigned(inputs(3 to 4)))+1) mod 4
+        report  integer'image(to_integer(unsigned(inputs(3 to 4)))) 
+          & " ++ != "
+          & integer'image(to_integer(unsigned(outputs)));
+        test_input := std_logic_vector(unsigned(test_input)  +1);
+      end loop;
 			wait;
 	end process;
 end architecture;
