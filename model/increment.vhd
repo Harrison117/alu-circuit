@@ -5,7 +5,7 @@ use ieee.std_logic_1164.all;
 
 entity increment is
 	port(
-		a: in std_logic_vector(0 to 1);
+		a,b: in std_logic_vector(0 to 1);
 		o: out std_logic_vector(0 to 1);
 		c_out: out std_logic
 		);

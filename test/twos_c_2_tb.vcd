@@ -1,0 +1,37 @@
+$date
+  Thu Feb 14 17:58:28 2019
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$var reg 2 ! a_in[0:1] $end
+$var reg 2 " o1[0:1] $end
+$scope module uut $end
+$var reg 2 # a[0:1] $end
+$var reg 2 $ o[0:1] $end
+$upscope $end
+$enddefinitions $end
+#0
+b00 !
+b00 "
+b00 #
+b00 $
+#10000000
+b01 !
+b11 "
+b01 #
+b11 $
+#20000000
+b10 !
+b10 "
+b10 #
+b10 $
+#30000000
+b11 !
+b01 "
+b11 #
+b01 $
+#40000000
