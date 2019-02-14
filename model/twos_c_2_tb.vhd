@@ -30,7 +30,7 @@ begin
 			a_in(0) <= test_input(0);
 		    wait for 10 ns;
 
-			report "1's("
+			report "2's("
 				& std_logic'image(a_in(0)) 
 				& std_logic'image(a_in(1)) 
 				& ") ="
