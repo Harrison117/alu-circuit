@@ -12,7 +12,7 @@ entity ALU is
 end entity;
 
 architecture struct of ALU is
-  signal demux0_res,demux1_res,demux2_res,demux3_res: std_logic_vector(0 to 7);
+  signal demux0_res,demux1_res,demux2_res,demux3_res: std_logic_vector(0 to 7):="00000000";
   signal   demux_to_op_0,
           demux_to_op_1,
           demux_to_op_2,
@@ -20,7 +20,7 @@ architecture struct of ALU is
           demux_to_op_4,
           demux_to_op_5,
           demux_to_op_6,
-          demux_to_op_7: std_logic_vector(0 to 3);
+          demux_to_op_7: std_logic_vector(0 to 3):= "0000";
   signal  op0_out,
           op1_out,
           op2_out,
@@ -28,7 +28,7 @@ architecture struct of ALU is
           op4_out,
           op5_out,
           op6_out,
-          op7_out : std_logic_vector(0 to 1);
+          op7_out : std_logic_vector(0 to 1):= "00";
   signal  op0_c_out,
           op1_c_out,
           op2_c_out,
@@ -36,10 +36,10 @@ architecture struct of ALU is
           op4_c_out,
           op5_c_out,
           op6_c_out,
-          op7_c_out : std_logic;
+          op7_c_out : std_logic:='0';
   signal  op_to_mux_0,
           op_to_mux_1,
-          op_to_mux_2: std_logic_vector(0 to 7);
+          op_to_mux_2: std_logic_vector(0 to 7) := "00000000";
 
   component op_to_mux is
     port(

@@ -1,58 +1,61 @@
 v 3
-file . "demux_3_8.vhd" "20190214014754.000" "20190214214242.905":
-  entity demux_3_8 at 1( 0) + 0 on 1029;
-  architecture behav of demux_3_8 at 13( 217) + 0 on 1030;
-file . "full_adder.vhd" "20190214010820.000" "20190214214242.923":
-  entity full_adder at 1( 0) + 0 on 1035;
-  architecture behav of full_adder at 12( 177) + 0 on 1036;
-file . "increment.vhd" "20190214121516.000" "20190214214242.923":
-  entity increment at 2( 2) + 0 on 1037;
-  architecture behav of increment at 14( 201) + 0 on 1038;
-file . "ones_c_2.vhd" "20190214010820.000" "20190214214242.955":
-  entity ones_c_2 at 2( 2) + 0 on 1043;
-  architecture behav of ones_c_2 at 12( 170) + 0 on 1044;
-file . "parallel_adder_2_2.vhd" "20190214010820.000" "20190214214242.987":
-  entity parallel_adder_2_2 at 1( 0) + 0 on 1049;
-  architecture struct of parallel_adder_2_2 at 13( 215) + 0 on 1050;
-file . "subtract_2_2_1c.vhd" "20190214010820.000" "20190214214243.015":
-  entity subtract_2_2_1c at 2( 2) + 0 on 1053;
-  architecture behav of subtract_2_2_1c at 13( 213) + 0 on 1054;
-file . "subtract_2_2_2c.vhd" "20190214010820.000" "20190214214243.027":
-  entity subtract_2_2_2c at 2( 2) + 0 on 1057;
-  architecture behav of subtract_2_2_2c at 13( 213) + 0 on 1058;
-file . "twos_c_2.vhd" "20190214010820.000" "20190214214243.034":
-  entity twos_c_2 at 2( 2) + 0 on 1061;
-  architecture behav of twos_c_2 at 12( 170) + 0 on 1062;
-file . "demux_tb.vhd" "20190214014240.000" "20190214214242.921":
-  entity demux_tb at 1( 0) + 0 on 1031;
-  architecture behav of demux_tb at 8( 109) + 0 on 1032;
-file . "mux_8_3.vhd" "20190214020654.000" "20190214214242.953":
-  entity mux_8_3 at 1( 0) + 0 on 1041;
-  architecture behav of mux_8_3 at 13( 215) + 0 on 1042;
-file . "increment_tb.vhd" "20190214121516.000" "20190214214242.938":
-  entity increment_tb at 1( 0) + 0 on 1039;
-  architecture test of increment_tb at 8( 119) + 0 on 1040;
-file . "subtract_2_2_1c_tb.vhd" "20190214121516.000" "20190214214243.021":
-  entity subtract_2_2_1c_tb at 1( 0) + 0 on 1055;
-  architecture test of subtract_2_2_1c_tb at 8( 131) + 0 on 1056;
-file . "subtract_2_2_2c_tb.vhd" "20190214121516.000" "20190214214243.033":
-  entity subtract_2_2_2c_tb at 1( 0) + 0 on 1059;
-  architecture test of subtract_2_2_2c_tb at 8( 131) + 0 on 1060;
-file . "parallel_adder_tb.vhd" "20190214121516.000" "20190214214243.003":
-  entity parallel_adder_tb at 1( 0) + 0 on 1051;
-  architecture test of parallel_adder_tb at 9( 120) + 0 on 1052;
-file . "ones_c_2_tb.vhd" "20190214121516.000" "20190214214242.968":
-  entity ones_c_2_tb at 1( 0) + 0 on 1045;
-  architecture test of ones_c_2_tb at 8( 117) + 0 on 1046;
-file . "twos_c_2_tb.vhd" "20190214121516.000" "20190214214243.041":
-  entity twos_c_2_tb at 1( 0) + 0 on 1063;
-  architecture test of twos_c_2_tb at 8( 117) + 0 on 1064;
-file . "ALU.vhd" "20190214134240.000" "20190214214242.894":
-  entity alu at 1( 0) + 0 on 1027;
-  architecture struct of alu at 14( 282) + 0 on 1028;
-file . "demux_to_op.vhd" "20190214131146.000" "20190214214242.923":
-  entity demux_to_op at 1( 0) + 0 on 1033;
-  architecture behav of demux_to_op at 12( 192) + 0 on 1034;
-file . "op_to_mux.vhd" "20190214133214.000" "20190214214242.974":
-  entity op_to_mux at 1( 0) + 0 on 1047;
-  architecture behav of op_to_mux at 12( 198) + 0 on 1048;
+file . "demux_3_8.vhd" "20190214142514.000" "20190214230651.086":
+  entity demux_3_8 at 1( 0) + 0 on 1749;
+  architecture behav of demux_3_8 at 13( 217) + 0 on 1750;
+file . "full_adder.vhd" "20190214010820.000" "20190214230651.086":
+  entity full_adder at 1( 0) + 0 on 1755;
+  architecture behav of full_adder at 12( 177) + 0 on 1756;
+file . "increment.vhd" "20190214121516.000" "20190214230651.087":
+  entity increment at 2( 2) + 0 on 1757;
+  architecture behav of increment at 14( 201) + 0 on 1758;
+file . "ones_c_2.vhd" "20190214010820.000" "20190214230651.088":
+  entity ones_c_2 at 2( 2) + 0 on 1763;
+  architecture behav of ones_c_2 at 12( 170) + 0 on 1764;
+file . "parallel_adder_2_2.vhd" "20190214010820.000" "20190214230651.089":
+  entity parallel_adder_2_2 at 1( 0) + 0 on 1769;
+  architecture struct of parallel_adder_2_2 at 13( 215) + 0 on 1770;
+file . "subtract_2_2_1c.vhd" "20190214010820.000" "20190214230651.089":
+  entity subtract_2_2_1c at 2( 2) + 0 on 1773;
+  architecture behav of subtract_2_2_1c at 13( 213) + 0 on 1774;
+file . "subtract_2_2_2c.vhd" "20190214010820.000" "20190214230651.090":
+  entity subtract_2_2_2c at 2( 2) + 0 on 1777;
+  architecture behav of subtract_2_2_2c at 13( 213) + 0 on 1778;
+file . "twos_c_2.vhd" "20190214010820.000" "20190214230651.091":
+  entity twos_c_2 at 2( 2) + 0 on 1781;
+  architecture behav of twos_c_2 at 12( 170) + 0 on 1782;
+file . "demux_tb.vhd" "20190214014240.000" "20190214230651.086":
+  entity demux_tb at 1( 0) + 0 on 1751;
+  architecture behav of demux_tb at 8( 109) + 0 on 1752;
+file . "mux_8_3.vhd" "20190214145540.000" "20190214230651.087":
+  entity mux_8_3 at 1( 0) + 0 on 1761;
+  architecture behav of mux_8_3 at 13( 215) + 0 on 1762;
+file . "increment_tb.vhd" "20190214121516.000" "20190214230651.087":
+  entity increment_tb at 1( 0) + 0 on 1759;
+  architecture test of increment_tb at 8( 119) + 0 on 1760;
+file . "subtract_2_2_1c_tb.vhd" "20190214121516.000" "20190214230651.090":
+  entity subtract_2_2_1c_tb at 1( 0) + 0 on 1775;
+  architecture test of subtract_2_2_1c_tb at 8( 131) + 0 on 1776;
+file . "subtract_2_2_2c_tb.vhd" "20190214121516.000" "20190214230651.091":
+  entity subtract_2_2_2c_tb at 1( 0) + 0 on 1779;
+  architecture test of subtract_2_2_2c_tb at 8( 131) + 0 on 1780;
+file . "parallel_adder_tb.vhd" "20190214121516.000" "20190214230651.089":
+  entity parallel_adder_tb at 1( 0) + 0 on 1771;
+  architecture test of parallel_adder_tb at 9( 120) + 0 on 1772;
+file . "ones_c_2_tb.vhd" "20190214121516.000" "20190214230651.088":
+  entity ones_c_2_tb at 1( 0) + 0 on 1765;
+  architecture test of ones_c_2_tb at 8( 117) + 0 on 1766;
+file . "twos_c_2_tb.vhd" "20190214121516.000" "20190214230651.091":
+  entity twos_c_2_tb at 1( 0) + 0 on 1783;
+  architecture test of twos_c_2_tb at 8( 117) + 0 on 1784;
+file . "ALU.vhd" "20190214150432.000" "20190214230651.085":
+  entity alu at 1( 0) + 0 on 1745;
+  architecture struct of alu at 14( 282) + 0 on 1746;
+file . "demux_to_op.vhd" "20190214131146.000" "20190214230651.086":
+  entity demux_to_op at 1( 0) + 0 on 1753;
+  architecture behav of demux_to_op at 12( 192) + 0 on 1754;
+file . "op_to_mux.vhd" "20190214144718.000" "20190214230651.088":
+  entity op_to_mux at 1( 0) + 0 on 1767;
+  architecture behav of op_to_mux at 12( 215) + 0 on 1768;
+file . "ALU_tb.vhd" "20190214150648.000" "20190214230651.085":
+  entity alu_tb at 1( 0) + 0 on 1747;
+  architecture test of alu_tb at 9( 109) + 0 on 1748;
