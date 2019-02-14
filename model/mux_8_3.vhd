@@ -23,7 +23,7 @@ architecture behav of mux_8_3 is
         outs(5) <= i(5) and (s(0)) and (not s(1)) and (s(2));     --6
         outs(6) <= i(6) and (s(0)) and (s(1)) and (not s(2));     --7
         outs(7) <= i(7) and (s(0)) and (s(1)) and (s(2));
+        wait on s,i,outs;
         o <= outs(7) or outs(6)  or outs(5) or outs(4) or outs(3) or outs(2) or outs(1) or outs(0);
-        wait on s,i;
       end process;
 end architecture;

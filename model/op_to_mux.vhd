@@ -4,7 +4,7 @@ use ieee.numeric_std.all;
 
 entity op_to_mux is
   port(
-    a,b,c,d,e,f,g,h: in std_logic:='0';
+    a,b,c,d,e,f,g,h: in std_logic;
     o: out std_logic_vector(0 to 7):="00000000"
   );
 end entity;

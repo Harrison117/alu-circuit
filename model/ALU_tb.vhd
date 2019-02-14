@@ -7,9 +7,9 @@ entity ALU_tb is
 end entity;
 
 architecture test of ALU_tb is
-  signal inputs: std_logic_vector(0 to 6);
-  signal outputs: std_logic_vector(0 to 1);
-  signal c_outs: std_logic;
+  signal inputs: std_logic_vector(0 to 6):="0000000";
+  signal outputs: std_logic_vector(0 to 1):="00";
+  signal c_outs: std_logic:='0';
 
   component ALU is
     port(

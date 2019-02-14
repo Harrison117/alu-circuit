@@ -5,8 +5,8 @@ entity parallel_adder_2_2 is
   port(
 
     a, b: in std_logic_vector(0 to 1);
-    o: out std_logic_vector(0 to 1);
-    c_out_2: out std_logic
+    o: out std_logic_vector(0 to 1):="00";
+    c_out_2: out std_logic:='0'
   );
 end entity;
 
