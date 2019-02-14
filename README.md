@@ -20,7 +20,11 @@ The design is implemented using Behavioral and Structural Approach. Proofs and i
   * Full Adder
   * Parallel Adder
 
-* Umali, Harold
+* Umali, Harold S
+  * Subtractor
+  * 1's and 2's Complement
+  * Increment
+  * Boolean Operations
 
 * Combined
   * integration into full ALU
