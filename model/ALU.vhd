@@ -90,7 +90,6 @@ architecture struct of ALU is
       a,b: in std_logic_vector(0 to 1);
       o: out std_logic_vector(0 to 1)
       );
-
   end component;
 
   component ones_c_2 is
@@ -105,8 +104,8 @@ architecture struct of ALU is
       a,b: in std_logic_vector(0 to 1);
       o: out std_logic_vector(0 to 1)
       );
+  end component;
 
-=======
   component increment is
   	port(
   		a,b: in std_logic_vector(0 to 1);
@@ -147,13 +146,13 @@ architecture struct of ALU is
 
     -- mapping demux to operations
     -- 0: and
-    and: and_2_2 port map(demux_to_op_4(0 to 1),demux_to_op_4(2 to 3) , op4_out);
+    and2: and_2_2 port map(demux_to_op_4(0 to 1),demux_to_op_4(2 to 3) , op4_out);
     -- 1: or
-    or: or_2_2 port map(demux_to_op_4(0 to 1),demux_to_op_4(2 to 3) , op4_out);
+    or2: or_2_2 port map(demux_to_op_4(0 to 1),demux_to_op_4(2 to 3) , op4_out);
     -- 2: xor
-    xor: xor_2_2 port map(demux_to_op_4(0 to 1),demux_to_op_4(2 to 3) , op4_out);
+    xor2: xor_2_2 port map(demux_to_op_4(0 to 1),demux_to_op_4(2 to 3) , op4_out);
     -- 3: not
-    not: ones_c_2 port map(demux_to_op_4(0 to 1), op4_out);
+    not2: ones_c_2 port map(demux_to_op_4(0 to 1), op4_out);
     -- 4: add
     add: parallel_adder_2_2 port map(demux_to_op_4(0 to 1),demux_to_op_4(2 to 3) , op4_out, op4_c_out);
     -- 5: sub1
