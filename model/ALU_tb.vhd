@@ -32,7 +32,7 @@ architecture test of ALU_tb is
 			for count in 0 to 15 loop
             inputs <= test_input;
 			  wait for 10 ns;
-        assert to_integer(unsigned(outputs))=(to_integer(unsigned(inputs(3 to 4)))+to_integer(unsigned(inputs(5 to 6)))) mod 4 
+        assert to_integer(unsigned(outputs))=(to_integer(unsigned(inputs(3 to 4)))+to_integer(unsigned(inputs(5 to 6)))) mod 4
         report  integer'image(to_integer(unsigned(inputs(3 to 4)))) &" + "
                 & integer'image(to_integer(unsigned(inputs(5 to 6)))) & " != "
                 & integer'image(to_integer(unsigned(outputs)));

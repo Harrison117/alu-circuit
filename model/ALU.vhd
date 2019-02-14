@@ -146,13 +146,13 @@ architecture struct of ALU is
 
     -- mapping demux to operations
     -- 0: and
-    and2: and_2_2 port map(demux_to_op_4(0 to 1),demux_to_op_4(2 to 3) , op4_out);
+    and2: and_2_2 port map(demux_to_op_0(0 to 1),demux_to_op_0(2 to 3) , op0_out);
     -- 1: or
-    or2: or_2_2 port map(demux_to_op_4(0 to 1),demux_to_op_4(2 to 3) , op4_out);
+    or2: or_2_2 port map(demux_to_op_1(0 to 1),demux_to_op_1(2 to 3) , op1_out);
     -- 2: xor
-    xor2: xor_2_2 port map(demux_to_op_4(0 to 1),demux_to_op_4(2 to 3) , op4_out);
+    xor2: xor_2_2 port map(demux_to_op_2(0 to 1),demux_to_op_2(2 to 3) , op2_out);
     -- 3: not
-    not2: ones_c_2 port map(demux_to_op_4(0 to 1), op4_out);
+    not2: ones_c_2 port map(demux_to_op_3(0 to 1), op3_out);
     -- 4: add
     add: parallel_adder_2_2 port map(demux_to_op_4(0 to 1),demux_to_op_4(2 to 3) , op4_out, op4_c_out);
     -- 5: sub1
